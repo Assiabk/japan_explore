@@ -1,0 +1,454 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #2c3e50);
+    color: #fff;
+    transition: background 0.5s, color 0.5s;
+}
+
+.carousel {
+    height: 400px;
+}
+
+.carousel .item {
+    height: 100%;
+}
+
+.carousel .item img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel .item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #fff; 
+}
+
+.carousel-indicators .active {
+    background-color: #ec1919;
+}
+
+.carousel_header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.carousel_header h4 {
+    color: #fff;
+}
+
+.carousel_header .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel_header .social-icons .social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.carousel_header .social-icons .social-icon:hover {
+    color: #ec1919;
+}
+
+.about-section {
+    padding: 50px 0;
+    margin-top: 20px;  
+    background-color: rgba(0, 0, 0, 0.5);  
+    transition: background 0.5s;
+}
+
+.about-section:hover {
+    background-color: rgba(0, 0, 0, 0.8);  
+}
+
+.about-text {
+    padding: 20px;
+    border-radius: 5px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+.about-text p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ffffffb3; 
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff; 
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #ec1919;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #fff;
+}
+
+
+.about-image {
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.popular-destinations-section {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.5s; 
+    color: #fff;
+}
+
+.popular-destinations-section:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.popular-destinations-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.popular-destinations-section p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.destination-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.destination-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(100%);
+}
+
+.destination-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.destination-info p {
+    font-size: 0.8em;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.destination-item:hover .destination-info {
+    background-color: rgba(0, 0, 0, 0.9); 
+    transform: translateY(0);
+}
+
+.destination-item:hover img {
+    transform: scale(1.05); 
+}/* General styles */
+#japanese-delicacy {
+    padding: 4rem 0;
+    background-color: #1a202c;
+    color: #ffffff;
+}
+
+/* Typography */
+#japanese-delicacy h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#japanese-delicacy h2.text-yellow-400 {
+    color:  #ec1919;
+    margin-bottom: 2rem;
+}
+
+#japanese-delicacy p {
+    color: #d1d5db;
+    margin-bottom: 2rem;
+}
+
+/* Button styles */
+#japanese-delicacy a {
+    display: inline-block;
+    background-color: transparent;
+    color: #ec1919; 
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    border: 2px solid #ec1919; 
+}
+
+#japanese-delicacy a:hover {
+    background-color: #ec1919; 
+    color: #ffffff; 
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+}
+
+.image-item {
+    border-radius: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 40px; 
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+
+.img-sushi {
+    width: 250px;
+    height: auto;
+}
+
+.img-ramen {
+    width: 200px;
+    height: auto;
+}
+
+.img-okonomiyaki {
+    width: auto;
+    height: 230px;
+}
+
+.img-takoyaki {
+    width: 200px;
+    height: auto;
+}
+
+.img-tempura {
+    width: 200px;
+    height: auto;
+}
+
+.img-tonkatsu {
+    width: 300px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.get-in-touch-section {
+    padding: 4rem 0;
+    background-color: #1a202c;
+    color: #ffffff; 
+    transition: background-color 1s ease-in-out; 
+}
+
+.get-in-touch-section:hover {
+    background-color: #2c3e50; 
+}
+
+.get-in-touch-section .section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.get-in-touch-section .section-description {
+    color: #d1d5db; 
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.get-in-touch-section .form-control {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(14, 13, 13, 0.3);
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.get-in-touch-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.get-in-touch-section .btn-primary {
+    background-color: #ec1919; 
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.get-in-touch-section .btn-primary:hover {
+    background-color: #ff3333; 
+}
+
+
+@media (max-width: 768px) {
+    .get-in-touch-section .col-md-6 {
+        width: 100%;
+    }
+}
+
+.footer-section {
+    background-color: #1a202c; 
+    color: #ffffff; 
+    padding: 3rem 0;
+    transition: background-color 2s ease-in-out; 
+}
+
+.footer-section:hover {
+    background-color: #2c3e50; 
+}
+
+.footer-section h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section ul.contact-info {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul.contact-info li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.footer-section .social-icons {
+    margin-top: 1rem;
+}
+
+.footer-section .social-icons .social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-section .social-icons .social-icon:hover {
+    color: #ec1919; 
+}
+
+.footer-section hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+.footer-section p {
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .footer-section .col-md-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
